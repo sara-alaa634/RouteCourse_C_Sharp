@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assigment_S3", "Assigment_S3.csproj", "{3DFCE05B-66E7-457B-9828-C50A8EDBF826}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DFCE05B-66E7-457B-9828-C50A8EDBF826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DFCE05B-66E7-457B-9828-C50A8EDBF826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DFCE05B-66E7-457B-9828-C50A8EDBF826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DFCE05B-66E7-457B-9828-C50A8EDBF826}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE73013D-0C7E-4386-A1EF-DA56D6016664}
+	EndGlobalSection
+EndGlobal
