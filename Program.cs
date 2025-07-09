@@ -1,344 +1,456 @@
-﻿using System;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.ComponentModel;
+using System.Numerics;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Assigment_S3
+namespace Assigment_S4
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-
             #region Problem 1
-            // 1.Write a program that allows the user to enter a number then print it.
-            //Console.Write("Please Enter Number:");
+            //1- Write a program that allows the user to insert an integer then print all numbers between 1 to that number
+
+            //Console.Write("enter integer number: ");
             //int.TryParse(Console.ReadLine(), out int number);
-            //Console.WriteLine($"the number you write is: {number}");
+            //for (int i =1; i<= number;i++)
+            //{
+            //    Console.Write(i +( i< number?",":"" ));
+            //}
+
             #endregion
 
             #region Problem 2
 
-            //2.Write C# program that converts a string to an integer, but the string contains non-numeric characters. And mention what will happen
+            //2- Write a program that allows the user to insert an integer then print a multiplication table up to 12.
 
-            //string text = "12se";
-            //int convertText = Convert.ToInt32(text);
-            //Console.WriteLine(convertText);
+            //Console.Write("enter integer number: ");
+            //int.TryParse(Console.ReadLine(), out int number);
+            //for (int i = 1; i <= 12; i++)
+            //{
+            //    Console.Write((i* number) + (i < 12 ? "," : ""));
+            //}
 
-            //What happend: the program will throw exception beacuse convert not handle the exception senario as tryParse()
             #endregion
 
             #region Problem 3
-            //3.Write C# program that Perform a simple arithmetic operation with floating-point numbers And mention what will happen
+            //3- Write a program that allows to user to insert number then print all even numbers between 1 to this number
 
-            //float x = 10.5f;
-            //float y = 5.5f;
-            //Console.WriteLine($"{x}+{y}={x+y}");
+            //Console.Write("enter integer number: ");
+            //int.TryParse(Console.ReadLine(), out int number);
+            //for (int i = 1; i <= number; i++)
+            //{
+            //    if(i % 2 == 0)
+            //    {
+            //        Console.Write(i  + (i < number-1 ? "," : ""));
 
-            // What Happend: nothing happend it makes the equation
+            //    }
+            //}
+
+
             #endregion
 
             #region Problem 4
-            //4.Write C# program that Extract a substring from a given string.
+            //4- Write a program that takes two integers then prints the power.
 
-            //string text = "hello world";
-            //Console.WriteLine($"extract substing from {text} text: {text.Substring(0,7)}");
+            //Console.Write("enter integer number: ");
+            //int.TryParse(Console.ReadLine(), out int number);
+            //Console.WriteLine();
+            //Console.Write("enter power number: ");
+            //int.TryParse(Console.ReadLine(), out int power);
+            //int result = 1;
+            //for (int i = 1; i <= power; i++)
+            //{
+            //    result *= number;
+            //}
+            //Console.WriteLine($"the result: {result}");
 
             #endregion
 
             #region Problem 5
 
-            //5.Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
+            //5- Write a program to enter marks of five subjects and calculate total, average and percentage.
 
-            //int x = 6, y = 5;
-            //Console.WriteLine($"X={x}, Y={y}");
-            //y = x;
-            //Console.WriteLine($"X={x}, Y={y}");
-            //x++;
-            //Console.WriteLine($"X={x}, Y={y}");
 
-            //What Happend: is when i change the value of x the y not also changed becuase the int is not refrensial type
+            //Console.WriteLine("enter marks of 5 subjects: ");
+            //int[] marks = new int[5];
+            //int total = 0;
+
+
+            //for (int i = 0; i <marks.Length; i++)
+            //{
+            //    Console.Write($"Subject {i+1}: ");
+            //    int.TryParse(Console.ReadLine(), out marks[i]);
+            //    total += marks[i];
+            //}
+            //// expect every subject is 100 mark so total is 500
+            //Console.WriteLine("=====================");
+            //Console.WriteLine($"Total: {total}");
+            //Console.WriteLine($"Average: {total/5}");
+            //Console.WriteLine($"Percentage: {(total*100)/500}");
 
             #endregion
 
             #region Problem 6
+            //6- Write a program to allow the user to enter a string and print the REVERSE of it.
 
-            //6.	Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
-            //Class1 class1 = new Class1();
-            //Class1 class2 = new Class1() { x=20 , y=20};
+            //Console.WriteLine("enter the string: ");
+            //string word = Console.ReadLine();
+            //char[] wordArray = word.ToCharArray();
 
-            //Console.WriteLine($"class1 x :{class1.x}, y:{class1.y}");
-            //Console.WriteLine($"class1 x :{class2.x}, y:{class2.y}");
+            //Array.Reverse(wordArray);
+            //Console.Write($"reverse of the string:");
+            //for (int i=0; i<wordArray.Length; i++)
+            //{
+            //    Console.Write(wordArray[i]);
+            //}
 
-            //class2 = class1;
-            //Console.WriteLine("===========================================");
-
-            //Console.WriteLine($"class1 x :{class1.x}, y:{class1.y}");
-            //Console.WriteLine($"class1 x :{class2.x}, y:{class2.y}");
-
-            //class1.x = 100;
-
-            //Console.WriteLine("===========================================");
-
-            //Console.WriteLine($"class1 x :{class1.x}, y:{class1.y}");
-            //Console.WriteLine($"class1 x :{class2.x}, y:{class2.y}");
-
-            //What Happend: is when i change the value of class1.x the class2.x also changed becuase the class is refrensial type
             #endregion
 
             #region Problem 7
 
-            //7.Write C# program that take two string variables and print them as one variable 
-            // Console.WriteLine("write your name:");
-            // Console.Write("first name: ");
-            //string firstName= Console.ReadLine();
-            // Console.Write("last name: ");
-            // string lastName = Console.ReadLine();
+            //7- Write a program to allow the user to enter int and print the REVERSED of it.
+
+            //Console.Write("enter the integer: ");
+            //int.TryParse(Console.ReadLine(), out int number);
+            //int reverse = 0;
+
+            //while(number > 0)
+            //{
+            //    reverse = reverse * 10 + reverse % 10;
+            //    number /= 10;
+            //}
+
+            //Console.WriteLine($"reverse of the integer: {reverse}");
 
 
-            // Console.WriteLine($"User Full Name: {firstName} {lastName}");
 
             #endregion
 
             #region Problem 8
 
-            //8. Write a program that calculates the simple interest given the principal amount, rate of interest, and time. Note: The formula for simple interest is Interest = (principal * rate * time) / 100.
+            //8- Write a program in C# Sharp to find prime numbers within a range of numbers.
 
-            //Console.WriteLine("enter the following values for the formula:");
-            //Console.Write("principal amount: ");
-            //int.TryParse(Console.ReadLine(), out int principle);
-            //Console.Write("rate of interest: ");
-            //int.TryParse(Console.ReadLine(), out int rate);
-            //Console.Write("time: ");
-            //int.TryParse(Console.ReadLine(), out int time);
+            //Console.Write("enter the beggining of range: ");
+            //int.TryParse(Console.ReadLine(), out int start);
+            //Console.Write("enter the end of range: ");
+            //int.TryParse(Console.ReadLine(), out int end);
 
-            //Console.WriteLine($"the formula={(principle*rate*time)/100}");
+            //for (int i=start; i<= end; i++)
+            //{
+            //    bool isPrimeNumber = true;
+            //    if (i <= 1) isPrimeNumber = false;
+            //    for (int j = 2; j <= i / 2; j++)
+            //    {
+            //        if (i % j == 0)
+            //        {
+            //            isPrimeNumber = false;
+            //            break;
+            //        }
+            //    }
+            //    if (isPrimeNumber)
+            //    {
+            //        Console.Write(i + " ");
+            //    }
+            //}
+
 
             #endregion
 
             #region Problem 9
 
-            //9.Write a program that calculates the Body Mass Index (BMI) given a person's weight in kilograms and height in meters. 
+            //9- . Write a program in C# Sharp to convert a decimal number into binary without using an array.
 
-            //Console.WriteLine("enter the following values for the formula of Body Mass Index (BMI):");
-            //Console.Write("Weight : ");
-            //int.TryParse(Console.ReadLine(), out int weight);
-            //Console.Write("Height : ");
-            //int.TryParse(Console.ReadLine(), out int height);
-            //Console.WriteLine($"the formula={(weight) / (height * height)}");
+            //Console.Write("enter the number: ");
+            // int.TryParse(Console.ReadLine(), out int number);
+            //string binary = "";
+            //while (number > 0)
+            //{
+            //    binary = (number % 2) + binary;
+            //    number /= 2;
+            //}
+            //Console.WriteLine("binary number is: " + binary);
 
             #endregion
 
             #region Problem 10
-            /*
-             10.	Write a program that uses the ternary operator to check if the temperature is too hot, too cold, or just good. Assign the result in a variable then display the result. 
-                    Note : 
-                    a.	that below 10 degrees is "Just Cold"
-                    b.	above 30 degrees is "Just Hot"
-                    c.	anything else is "Just Good"
 
-             */
+            //10- Create a program that asks the user to input three points (x1, y1), (x2, y2), and (x3, y3), and determines whether these points lie on a single straight line.
 
-            //Console.WriteLine("enter the temprature");
-            //int.TryParse(Console.ReadLine(), out int temp);
-            //string result = temp < 10 ? "Just Cold" : temp > 30 ? "Just Hot" : "Just Good";
-            //Console.WriteLine($"temp is {result}");
+            //Console.WriteLine("enter the  three points (x1 y1) ,( x2 y2), (x3 y3):");
+            //int[,] points = new int[3, 2];
+            //for(int i=0; i< 3; i++)
+            //{
+            //    Console.Write($"enter the x{i+1}: ");
+            //    int.TryParse(Console.ReadLine(), out points[i,0]);
+            //    Console.Write($"enter the y{i + 1}: ");
+            //    int.TryParse(Console.ReadLine(), out points[i, 1]);
+
+            //}
+            //bool isStraightLine = (points[1, 1] - points[0, 1]) * (points[2, 0] - points[1, 0]) == (points[2, 1] - points[1, 1]) * (points[1, 0] - points[0, 0]);
+
+            //Console.WriteLine(isStraightLine?"yes those points are on a straight line": "no those points are not on a straight line");
+
 
             #endregion
 
+
             #region Problem 11
 
-            /*
-             11.Write a program that takes the date from the user and displays it in various formats using string interpolation.
-                Ex :
-                Today’s date : 20 , 11 , 2001
-                Today's date : 20 / 11 / 2001
-                Today's date : 20 – 11 – 2001
-             
-             */
+            //11- . Write a program that prints an identity matrix using for loop, in other words takes a value n from the user and shows the identity table of size n * n.
 
-            //Console.WriteLine("enter the date");
-            //Console.Write("day: ");
-            //int.TryParse(Console.ReadLine(), out int day);
-            //Console.Write("month: ");
-            //int .TryParse(Console.ReadLine(), out int month);
-            //Console.Write("year: ");
-            //int.TryParse(Console.ReadLine(), out int year);
-            //Console.WriteLine($"Today’s date : {day} , {month} , {year}");
-            //Console.WriteLine($"Today’s date : {day} / {month} / {year}");
-            //Console.WriteLine($"Today’s date : {day} - {month} - {year}");
+            //Console.Write("enter the size of identity matrix: ");
+            //int.TryParse(Console.ReadLine(), out int n);
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = 0; j < n; j++)
+            //    {
+            //        if (i == j)
+            //        {
+            //            Console.Write("1");
+            //        }
+            //        else
+            //        {
+            //            Console.Write("0");
+            //        }
+            //    }
+            //    Console.WriteLine();
+            //}
 
             #endregion
 
             #region Problem 12
 
-            /*
-             12- Write a program that takes a number from the user then print yes if that number can be divided by 3 and 4 otherwise print no.
-                Example (1)
-                Input: 12 
-                Output: Yes
-                Example (2)
-                Input: 9 
-                Output: No
+            //12- Write a program in C# Sharp to find the sum of all elements of the array.
 
-             */
-            //Console.WriteLine("enter the number");
-            //Console.Write("number: ");
-            //int.TryParse(Console.ReadLine(), out int number);
+            //Console.Write("write array size: ");
+            //int.TryParse(Console.ReadLine(), out int n);
+            //int[] numbers = new int[n];
+            //int sum = 0;
+            //for(int i=0; i< n; i++)
+            //{
+            //    Console.Write($"element {i+1} : ");
+            //    int.TryParse(Console.ReadLine(), out numbers[i]);
+            //    sum += numbers[i];
 
-            //string result = (number % 3 == 0 && number % 4 == 0) ? "Yes" : "No";
-            //Console.WriteLine($"the result is :{result}");
+            //}
+
+            //Console.WriteLine($"the sum: {sum}");
 
             #endregion
 
             #region Problem 13
 
-            /*
-             13- Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.
-                Example (1)
-                Input: -5
-                Output: negative
-                Example (2)
-                Input: 10
-                Output: positive
-             */
+            // 13 - Write a program in C# Sharp to merge two arrays of the same size sorted in ascending order.
 
-            //Console.WriteLine("enter the integer number");
-            //Console.Write("number: ");
-            //int.TryParse(Console.ReadLine(), out int number);
 
-            //string result = (number <0) ? "Negative" : "Postive";
-            //Console.WriteLine($"the result is :{result}");
+            //Console.Write("write first array size: ");
+            //int.TryParse(Console.ReadLine(), out int n1);
+            //int[] array1 = new int[n1];
+            //Console.WriteLine("enter first array elements: ");
+            //for (int i = 0; i < n1; i++)
+            //{
+            //    Console.Write($"element {i + 1} : ");
+            //    int.TryParse(Console.ReadLine(), out array1[i]);
+            //}
+            //Console.WriteLine("==========================================");
+
+            //Console.Write("write second array size: ");
+            //int.TryParse(Console.ReadLine(), out int n2);
+            //int[] array2 = new int[n2];
+            //Console.WriteLine("enter second array elements: ");
+            //for (int i = 0; i < n2; i++)
+            //{
+            //    Console.Write($"element {i + 1} : ");
+            //    int.TryParse(Console.ReadLine(), out array2[i]);
+            //}
+
+            //Console.WriteLine("==========================================");
+            //int[] mergedArray = new int[n1 + n2];
+            //Array.Copy(array1, mergedArray, n1);
+            //Array.Copy(array2, 0, mergedArray, n1, n2);
+            //Array.Sort(mergedArray);
+
+            //Console.WriteLine("merged array: ");
+            //for (int i = 0; i < mergedArray.Length; i++)
+            //{
+            //    Console.Write(mergedArray[i] + (i < mergedArray.Length - 1 ? ", " : ""));
+
+            //}
+
+
 
             #endregion
 
             #region Problem 14
 
-            /*
-             14- Write a program that takes 3 integers from the user then prints the max element and the min element.
-                Example (1)
-                Input:7,8,5
-                Output:
-                max element = 8
-                min element = 5
-            —--------------------------------
-                Example (2)
-                Input: 3 6 9
-                Outputs:
-                Max element = 9
-                Min element = 3 
-             */
+            //14- Write a program in C# Sharp to count the frequency of each element of an array.
 
-            //Console.WriteLine("enter the integer values");
-            //Console.Write("first number: ");
-            //int.TryParse(Console.ReadLine(), out int number1);
-            //Console.Write("second number: ");
-            //int.TryParse(Console.ReadLine(), out int number2);
-            //Console.Write("third number: ");
-            //int.TryParse(Console.ReadLine(), out int number3);
 
-            //int max = number1, min = number1;
-            //// for the max
-            //if (number2 > max)
-            //    max = number2;
-            //if (number3 > max)
-            //    max = number3;
-
-            //// for the min
-            //if (number2 < min)
-            //    min = number2;
-            //if (number3 < min)
-            //    min = number3;
-            //Console.WriteLine($"the result is the maximum number is : {max}, minimun number is : {min}");
 
             #endregion
 
             #region Problem 15
 
-            //Write a program that allows the user to insert an integer number then check If a number is even or odd.
-            //Console.Write("enter integer number: ");
-            //int.TryParse(Console.ReadLine(), out int number);
-            //string result = (number % 2 == 0) ? "Even" : "Odd";
-            //Console.WriteLine($"the result is: {result}");
+            //15- Write a program in C# Sharp to find maximum and minimum element in an array
+
+            //Console.Write("write array size: ");
+            //int.TryParse(Console.ReadLine(), out int n);
+            //int[] numbers = new int[n];
+            //Console.WriteLine("enter values of the array");
+            //for(int i = 0; i < n; i++)
+            //{
+            //    Console.Write($"element {i + 1} : ");
+            //    int.TryParse(Console.ReadLine(), out numbers[i]);
+            //}
+            //int max = numbers[0];
+            //int min = numbers[0];
+
+            //for(int i=1; i<n; i++)
+            //{
+            //    if (numbers[i] > max)
+            //    {
+            //        max = numbers[i];
+            //    }
+            //    if (numbers[i] < min)
+            //    {
+            //        min = numbers[i];
+            //    }
+            //}
+
+            //Console.WriteLine($"max value: {max}");
+            //Console.WriteLine($"min value: {min}");
+
+
 
             #endregion
 
             #region Problem 16
 
-            /*
-             16- Write a program that takes character from the user then if it is a vowel chars (a,e,I,o,u) then print (vowel) otherwise print (consonant).
-                Example (1)
-                Input: O
-                Output: vowel
-                Example (2)
-                Input: b
-                Output: Consonant
-             */
-            //Console.Write("enter the char: ");
-            //char.TryParse(Console.ReadLine(), out char character);
+            //16- Write a program in C# Sharp to find the second largest element in an array.
 
-            //switch(character) {
-            //    case 'a':
-            //    case 'A':
-            //    case 'e':
-            //    case 'E':
-            //    case 'i':
-            //    case 'I':
-            //    case 'o':
-            //    case 'O':
-            //    case 'u':
-            //    case 'U':
-            //        Console.WriteLine("vowel char");
-            //        break;
-            //    default:
-            //        Console.WriteLine("consonant char");
-            //        break;
+            //Console.Write("write array size: ");
+            //int.TryParse(Console.ReadLine(), out int n);
+            //int[] numbers = new int[n];
+            //Console.WriteLine("enter values of the array");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write($"element {i + 1} : ");
+            //    int.TryParse(Console.ReadLine(), out numbers[i]);
             //}
+
+            //Array.Sort(numbers);
+            //Console.WriteLine($"the second largest value is : {numbers[n - 2]}");
 
             #endregion
 
             #region Problem 17
 
+            //17-. Consider an Array of Integer values with size N, having values as  in this Example
 
-            /*
-             Write a program to input the month number and print the number of days in that month.
-                Example
-                Input: Month Number: 1
-                Output: Days in Month: 31
-             */
-
-            //Console.Write("enter month number: ");
-            //int.TryParse(Console.ReadLine(), out int month);
-
-            //switch (month) { 
-            //case 1:
-            //case 3:
-            //case 5:
-            //case 7:
-            //case 8:
-            //case 10:
-            //case 12:
-            //    Console.WriteLine("days in this month is :31");
-            //    break;
-            //case 2:
-            //    Console.WriteLine("days in this month is :28");
-            //    break;
-            //case 4:
-            //case 6:
-            //case 9:
-            //case 11:
-            //    Console.WriteLine("days in this month is :30");
-            //    break;
-
+            //Console.Write("write array size: ");
+            //int.TryParse(Console.ReadLine(), out int n);
+            //int[] numbers = new int[n];
+            //Console.WriteLine("enter values of the array");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write($"element {i + 1} : ");
+            //    int.TryParse(Console.ReadLine(), out numbers[i]);
             //}
+            //int maxDistance = -1;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = n - 1; j > i; j--)
+            //    {
+            //        if (numbers[i] == numbers[j])
+            //        {
+            //            int distance = j - i - 1;
+            //            if (distance > maxDistance) maxDistance = distance;
+            //            break;
+            //        }
+            //    }
+            //}
+            //Console.WriteLine($"the longest distance between Two equal cells: {maxDistance}");
+
+
             #endregion
 
+            #region Problem 18
+
+            //Console.Write("enter words with space between words: ex:this is a test:");
+            //string input = Console.ReadLine();
+            //string[] words = input.Split(" ");
+            //Array.Reverse(words);
+            //Console.WriteLine("===============================");
+
+            //Console.Write($"reversed words:");
+            //for (int i = 0; i < words.Length; i++)
+            //{
+            //    Console.Write(words[i]+" ");
+            //}
 
 
 
+            #endregion
+
+            #region Problem 19
+
+            // 19-Write a program to create two multidimensional arrays of same size. Accept value from user and store them in first array. Now copy all the elements of first array on second array and print second array.
+
+            //Console.Write("write array size: ");
+            //int.TryParse(Console.ReadLine(), out int n);
+            //int[,] array1 = new int[n,n];
+            //Console.WriteLine("enter values of the first array");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for(int j=0; j < n; j++)
+            //    {
+            //        Console.Write($"element [{i + 1},{j + 1}] : ");
+            //        int.TryParse(Console.ReadLine(), out array1[i, j]);
+            //    }
+
+            //}
+
+            //int[,] array2 = new int[n, n];
+            //Array.Copy(array1, array2, array1.Length);
+
+            //Console.WriteLine("valuse of second array afrer copy");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = 0; j < n; j++)
+            //    {
+            //        Console.WriteLine($"element [{i + 1},{j + 1}] : {array2[i,j]}");
+            //    }
+
+            //}
+
+            #endregion
+
+            #region Problem 20
+
+            //20- Write a Program to Print One Dimensional Array in Reverse Order
+
+            //Console.Write("write array size: ");
+            //int.TryParse(Console.ReadLine(), out int n);
+            //int[] numbers = new int[n];
+            //Console.WriteLine("enter values of the array");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write($"element {i + 1} : ");
+            //    int.TryParse(Console.ReadLine(), out numbers[i]);
+            //}
+
+            //Array.Reverse(numbers);
+            //Console.Write("elements of the array after reverse: ");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write(numbers[i]+(i<n-1?",":" "));
+            //}
 
 
-
-
+            #endregion
         }
+
     }
 }

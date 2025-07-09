@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Courses\\Route Asp.net\\C#\\AssigmentS3\\Assigment_S3\\Assigment_S3.csproj",
-      "projectName": "Assigment_S3",
-      "projectPath": "D:\\Courses\\Route Asp.net\\C#\\AssigmentS3\\Assigment_S3\\Assigment_S3.csproj",
+      "projectUniqueName": "D:\\Courses\\Route Asp.net\\C#\\AssigmentS4\\Assigment_S4\\Assigment_S4.csproj",
+      "projectName": "Assigment_S4",
+      "projectPath": "D:\\Courses\\Route Asp.net\\C#\\AssigmentS4\\Assigment_S4\\Assigment_S4.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Courses\\Route Asp.net\\C#\\AssigmentS3\\Assigment_S3\\obj\\",
+      "outputPath": "D:\\Courses\\Route Asp.net\\C#\\AssigmentS4\\Assigment_S4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,14 @@
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\bin\Debug\net9.0\Assigment_S4.exe
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\bin\Debug\net9.0\Assigment_S4.deps.json
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\bin\Debug\net9.0\Assigment_S4.runtimeconfig.json
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\bin\Debug\net9.0\Assigment_S4.dll
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\bin\Debug\net9.0\Assigment_S4.pdb
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\obj\Debug\net9.0\Assigment_S4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\obj\Debug\net9.0\Assigment_S4.AssemblyInfoInputs.cache
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\obj\Debug\net9.0\Assigment_S4.AssemblyInfo.cs
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\obj\Debug\net9.0\Assigment_S4.csproj.CoreCompileInputs.cache
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\obj\Debug\net9.0\Assigment_S4.dll
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\obj\Debug\net9.0\refint\Assigment_S4.dll
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\obj\Debug\net9.0\Assigment_S4.pdb
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\obj\Debug\net9.0\Assigment_S4.genruntimeconfig.cache
+D:\Courses\Route Asp.net\C#\AssigmentS4\Assigment_S4\obj\Debug\net9.0\ref\Assigment_S4.dll
